@@ -1,0 +1,18 @@
+<div class="h-100 d-flex flex-column align-items-center justify-content-center bg-dark text-light">
+    <img
+        src="https://www.gravatar.com/avatar/942ba30693b42fae8f361d1a51220bcd"
+    >
+    <div class="">
+        <h4 class="text-center" *ngFor="let item of lines"> {{item}} </h4>
+    </div>
+    <div class="d-flex flex-row align-items-center">
+        <a
+            class="m-1 btn btn-danger"
+            *ngFor="let lk of links"
+            [href]="lk.location"
+            target="_blank"
+        >
+            {{ lk.name }}
+        </a>
+    </div>
+</div>
