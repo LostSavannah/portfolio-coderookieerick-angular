@@ -13,5 +13,5 @@ jobs:
       - run: |
           npm i
           npm run build
-          rm -r /var/www/php/portfolio-angular/*
+          rm -r /var/www/php/portfolio-angular/* || true
           cp -r dist/portfolio/* /var/www/php/portfolio-angular
