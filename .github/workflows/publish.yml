@@ -14,4 +14,4 @@ jobs:
           npm i
           npm run github-publish
           rm -r /var/www/php/portfolio-angular/* || true
-          cp -r docs/portfolio/* /var/www/php/portfolio-angular
+          cp -r docs/* /var/www/php/portfolio-angular
